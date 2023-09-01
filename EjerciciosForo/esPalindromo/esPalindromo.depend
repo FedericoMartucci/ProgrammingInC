@@ -1,0 +1,11 @@
+# depslib dependency file v1.0
+1693589842 source:c:\devs\ejerciciosforo\espalindromo\main.c
+	"../../Bibliotecas/miStringH.h"
+
+1693589243 c:\devs\bibliotecas\mistringh.h
+	<stdio.h>
+	<stdlib.h>
+
+1693589978 source:c:\devs\bibliotecas\mistringh.c
+	"miStringH.h"
+

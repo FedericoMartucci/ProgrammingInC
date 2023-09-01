@@ -16,7 +16,7 @@ void insertarElementoOrdenado(int* vec, int elemento, int tamVec, int* ce)
     int j;
     int aux;
     int aux2;
-    for(i = 0; i < tamVec-1; i++)
+    for(i = 0; i < tamVec; i++)
     {
         if(*vec > elemento)
         {
@@ -69,7 +69,45 @@ void eliminarPrimeraAparicionElemento(int* vec, int elemento, int tamVec, int* c
     }
 }
 void eliminarAparicionesElemento(int* vec, int elemento, int tamVec, int* ce){
+    int* escrituraVec = vec;
+    int* finVec = vec + tamVec-1;
+    while(vec < finVec){
+        if(*vec == elemento){
+            while(*vec == elemento && vec <= finVec){
+                vec++;
+                (*ce)--;
+            }
+            *escrituraVec = *vec;
+            escrituraVec++;
+        }else if (vec < finVec){
+            escrituraVec++;
+            vec++;
+        }
+    }
+}
+int esPalindromo(const char *cadena){
+    const char *inicio;
+    const char *fin;
 
+    inicio = cadena;
+    fin = cadena;
+
+    while(!*fin)
+        fin++;
+    fin--;
+    while(inicio < fin){
+        if(*inicio != *fin)
+            return 0;
+        inicio++;
+        fin--;
+    }
+    return 1;
+}
+
+void buscaFin(char* cad){
+    while(*cad != '\0' && *cad != '\t')
+        cad++;
+    cad--;
 }
 void imprimirVector(int *vec, int tam){
     int i;

@@ -1,0 +1,11 @@
+# depslib dependency file v1.0
+1693582987 source:c:\devs\ejerciciosforo\main\main.c
+	"../../Bibliotecas/miStringH.h"
+
+1693582933 c:\devs\bibliotecas\mistringh.h
+	<stdio.h>
+	<stdlib.h>
+
+1693583001 source:c:\devs\ejerciciosforo\main\mistringh.c
+	"../../Bibliotecas/miStringH.h"
+
