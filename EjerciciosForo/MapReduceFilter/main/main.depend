@@ -1,0 +1,12 @@
+# depslib dependency file v1.0
+1695597036 source:c:\devs\ejerciciosforo\mapreducefilter\main\main.c
+	"../../../Bibliotecas/genericos.h"
+
+1695597005 c:\devs\bibliotecas\genericos.h
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+
+1695596985 source:c:\devs\bibliotecas\genericos.c
+	"genericos.h"
+

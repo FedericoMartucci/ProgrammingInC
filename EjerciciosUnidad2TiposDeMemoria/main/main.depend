@@ -1,0 +1,12 @@
+# depslib dependency file v1.0
+1695589944 source:c:\devs\ejerciciosunidad2tiposdememoria\main\main.c
+	"../../Bibliotecas/genericos.h"
+
+1695589079 c:\devs\bibliotecas\genericos.h
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+
+1695589827 source:c:\devs\bibliotecas\genericos.c
+	"genericos.h"
+
