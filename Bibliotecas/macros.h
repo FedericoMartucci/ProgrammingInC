@@ -21,7 +21,9 @@
 #define MENOR(X, Y) (((X - Y) < 0)? (X) : (Y))
 /// Fin ejercicio 6
 
-int menorNumero(int x, int y);
-
+void initializeArray(int* arr, int arrElements);
+int deployMenu(int* arr, int arrElements, size_t dataSize);
+void* minorElement(const void* arr, int arrElements, size_t dataSize, const void*(*compare)(const void*, const void*));
+const void* compareInt(const void* firstElement, const void* secondElement);
 
 #endif // MACROS_H_INCLUDED

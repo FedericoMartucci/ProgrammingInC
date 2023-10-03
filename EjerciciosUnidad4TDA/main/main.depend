@@ -1,0 +1,11 @@
+# depslib dependency file v1.0
+1696166199 source:c:\devs\bibliotecas\tdafecha.c
+	"tdafecha.h"
+
+1696166163 c:\devs\bibliotecas\tdafecha.h
+	<stdio.h>
+	<stdlib.h>
+
+1696166238 source:c:\devs\ejerciciosunidad4tda\main\main.c
+	"../../Bibliotecas/tdafecha.h"
+

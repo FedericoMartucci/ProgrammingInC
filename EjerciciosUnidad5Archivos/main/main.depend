@@ -1,0 +1,11 @@
+# depslib dependency file v1.0
+1696187699 source:c:\devs\bibliotecas\files.c
+	"files.h"
+
+1696189068 c:\devs\bibliotecas\files.h
+	<stdio.h>
+	<stdlib.h>
+
+1696186972 source:c:\devs\ejerciciosunidad5archivos\main\main.c
+	"../../Bibliotecas/files.h"
+
