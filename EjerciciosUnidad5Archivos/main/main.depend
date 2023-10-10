@@ -1,11 +1,13 @@
 # depslib dependency file v1.0
-1696187699 source:c:\devs\bibliotecas\files.c
+1696805073 source:c:\devs\bibliotecas\files.c
 	"files.h"
 
-1696189068 c:\devs\bibliotecas\files.h
+1696802382 c:\devs\bibliotecas\files.h
 	<stdio.h>
 	<stdlib.h>
+	<string.h>
+	<ctype.h>
 
-1696186972 source:c:\devs\ejerciciosunidad5archivos\main\main.c
+1696802541 source:c:\devs\ejerciciosunidad5archivos\main\main.c
 	"../../Bibliotecas/files.h"
 
