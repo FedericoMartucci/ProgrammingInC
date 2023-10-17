@@ -1,11 +1,11 @@
 # depslib dependency file v1.0
-1696195339 source:c:\devs\bibliotecas\macros.c
+1696215943 source:c:\devs\bibliotecas\macros.c
 	"macros.h"
 
 1696194830 c:\devs\bibliotecas\macros.h
 	<stdio.h>
 	<stdlib.h>
 
-1696195246 source:c:\devs\ejerciciosunidad3macros\main\main.c
+1697115197 source:c:\devs\ejerciciosunidad3macros\main\main.c
 	"../../Bibliotecas/macros.h"
 

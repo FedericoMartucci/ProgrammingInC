@@ -3,23 +3,29 @@
 int main()
 {
     ///Exercise 1
-    int arrElements;
-
-    printf("Elements to enter: ");
-    scanf("%d", &arrElements);
-
-    int* arr = malloc(arrElements * sizeof(int));
-    if(!arr)
-        return 0;
-    initializeArray(arr, arrElements);
-
-    int* iniArr = arr;
-
-    system("cls");
-
-    while(deployMenu(arr, arrElements, sizeof(int)))
-
-    free(iniArr);
+//    int arrElements;
+//
+//    printf("Elements to enter: ");
+//    scanf("%d", &arrElements);
+//
+//    int* arr = malloc(arrElements * sizeof(int));
+//    if(!arr)
+//        return 0;
+//    initializeArray(arr, arrElements);
+//
+//    int* iniArr = arr;
+//
+//    system("cls");
+//
+//    while(deployMenu(arr, arrElements, sizeof(int)))
+//
+//    free(iniArr);
+    int mat[300][1024] = {{0}};
+    int i;
+    int j;
+    for(j = 0; j < 300; j++)
+        for(i = 0; i < 1024; i++)
+            printf("%d\n", mat[j][i]);
     ///Exercise 2
     ///Exercise 3
     ///Exercise 4

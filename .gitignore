@@ -1,5 +1,6 @@
-.rar
-.o
-.layout
+*.rar
+*.zip
+*.o
+*.layout
 /bin
-.exe
+*.exe
