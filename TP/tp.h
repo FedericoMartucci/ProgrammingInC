@@ -39,15 +39,13 @@
 #define PCS 1604            ///580+1024
 #define PCS_SIZE 1024
                             ///1604+1024 = 2628
-                                                            ///FULL RANGE                   ///EXPECTED RANGE       -> SI NO ESTA EN ESE RANGO, INFORMAR ERROR
-#define V_BAT_AVERAGE_OFFSET 750            ///0x000 a 0x FFF = 0 a 4095 SIN SIGNO          -> 3165 >= VALUE <= 4093        ///2BYTES DE DATO
-#define OBT_OFFSET  92          ///RANGO: UNSIGNED, 4 BYTES DE DATO
+
+#define V_BAT_AVERAGE_OFFSET 750
+#define OBT_OFFSET  92
 
 
 #define FIX_RAW(RAW) (RAW * 0.01873128 + (-38.682956))
 
-//#define LOWER_BOUND_V 31.5
-//#define UPPER_BOUND_V 32
 
 int openFile(FILE** filePointer, const char* fileName, const char* mode);
 int checkEndianness();

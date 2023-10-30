@@ -10,7 +10,6 @@ int main()
 
     endianness = checkEndianness();
 
-
     if(         UNKNOWN_FORMAT == endianness            )
     {
         return UNKNOWN_FORMAT_ERR;

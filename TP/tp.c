@@ -68,7 +68,7 @@ int traverseFileAndRecordResults(FILE* dataFilePointer, FILE* resultsFilePointer
         return MEM_ERR;
     }
 
-    fprintf(resultsFilePointer,"Voltage;Datetime\n");
+    fprintf(resultsFilePointer, "Voltage;Datetime\n");
 
     fread(dataRegister, REGISTER_SIZE, 1, dataFilePointer);
     while(          !feof(dataFilePointer)           )
@@ -97,7 +97,7 @@ int traverseFileAndRecordResults(FILE* dataFilePointer, FILE* resultsFilePointer
             }
         }
         volts = FIX_RAW(vBatAverage);
-        fprintf(resultsFilePointer,"%lf;%s", volts, asctime(timeInfo));
+        fprintf(resultsFilePointer, "%lf;%s", volts, asctime(timeInfo));//Asctime convierte un struct tm a una cadena con formato "Dom Mmm dd hh:mm:ss aaaa\n"
         fread(dataRegister, REGISTER_SIZE, 1, dataFilePointer);
     }
 
@@ -111,5 +111,5 @@ struct tm* getDatetime(const int32_t* dateTime)
     time_t time;
 
     time = (time_t)(*dateTime);
-    return localtime(&time);
+    return localtime(&time);//Convierte unixtimestamp a un struct tm
 }

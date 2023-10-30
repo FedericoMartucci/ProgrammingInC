@@ -24,3 +24,17 @@
 1697503060 source:c:\users\user\desktop\c\topicosdeprogramacion-3635\tp\main.c
 	"tp.h"
 
+1698612819 source:c:\devs\tp\main.c
+	"tp.h"
+
+1698612819 c:\devs\tp\tp.h
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<stdbool.h>
+	<stdint.h>
+	<time.h>
+
+1698613095 source:c:\devs\tp\tp.c
+	"tp.h"
+
