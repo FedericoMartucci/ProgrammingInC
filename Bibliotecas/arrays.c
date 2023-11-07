@@ -215,10 +215,10 @@ void buscaFin(char* cad){
 void imprimirVector(int *vec, int tam){
     int i;
     for(i = 0; i < tam; i++){
-        printf("%d\t", *vec);
+        printf("%d ", *vec);
         vec++;
     }
-    printf("\n\n");
+    printf("\n");
 }
 char* miStrcpy(char* s1, const char* s2){
     while(*s2){
@@ -510,5 +510,46 @@ void puntosPorEquipo(int* matriz){
 
     for(fila = 0; fila < ORDEN; fila++)
         printf("Equipo %d: %d\n", fila + 1, vectorPuntos[fila]);
+
+}
+
+void insertElementGeneric(void* arr, void* element, int position, size_t elementSize, size_t arraySize, int* quantityOfElements, void(*swapElement)(void*, void*))
+{
+    void* lastElement;
+    if(position == arraySize)
+        memcpy(arr + (arraySize - 1) * elementSize, element, elementSize);
+    lastElement = arr + elementSize * quantityOfElements - elementSize;
+
+}
+void swapIntegers(void* arr, void* element)
+{
+    int aux;
+
+    aux = *(int*)arr;
+    *(int*)arr = *(int*)element;
+    *(int*)element = aux;
+}
+void swapFloats(void* arr, void* element)
+{
+    int aux;
+
+    aux = *(float*)arr;
+    *(float*)arr = *(float*)element;
+    *(float*)element = aux;
+}
+void insertSortedElementGeneric(void* arr, void* element, size_t arraySize, int* quantityOfElements)
+{
+
+}
+void eraseElementGen(void* arr, void* element, size_t arraySize, int* quantityOfElements)
+{
+
+}
+void eraseFirstOccurrenceElementGen(void* arr, void* element, size_t arraySize, int* quantityOfElements)
+{
+
+}
+void eraseAllOcurrencesElementGen(void* arr, void* element, size_t arraySize, int* quantityOfElements)
+{
 
 }

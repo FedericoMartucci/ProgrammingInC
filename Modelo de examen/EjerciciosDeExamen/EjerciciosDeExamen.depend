@@ -1,0 +1,12 @@
+# depslib dependency file v1.0
+1699314603 source:c:\devs\modelo de examen\ejerciciosdeexamen\main.c
+	"ejerciciosModelos.h"
+
+1699320785 c:\devs\modelo de examen\ejerciciosdeexamen\ejerciciosmodelos.h
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+
+1699320755 source:c:\devs\modelo de examen\ejerciciosdeexamen\ejerciciosmodelos.c
+	"ejerciciosModelos.h"
+

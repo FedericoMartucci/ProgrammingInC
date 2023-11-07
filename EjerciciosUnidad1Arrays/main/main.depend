@@ -1,11 +1,12 @@
 # depslib dependency file v1.0
-1694056099 source:c:\devs\bibliotecas\arrays.c
+1699114152 source:c:\devs\bibliotecas\arrays.c
 	"arrays.h"
 
-1694055587 c:\devs\bibliotecas\arrays.h
+1699120701 c:\devs\bibliotecas\arrays.h
 	<stdio.h>
 	<stdlib.h>
+	<string.h>
 
-1694111033 source:c:\devs\ejerciciosunidad1arrays\main\main.c
+1699114232 source:c:\devs\ejerciciosunidad1arrays\main\main.c
 	"../../Bibliotecas/arrays.h"
 

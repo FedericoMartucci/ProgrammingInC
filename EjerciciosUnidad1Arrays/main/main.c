@@ -94,18 +94,18 @@ int main()
 //    transponerMatrizInSitu((int*)matriz);
 //    mostrarMatriz((int*)matriz, ORDEN, ORDEN);
     /// ---------------- EJERCICIO 18 ----------------
-    int matriz[ORDEN][ORDEN] = {{1, 2, 3},
-                                {4, 5, 6},
-                                {7, 8, 9}};
-    int matriz2[3][2] = {{1, 2},
-                        {4, 5},
-                        {7, 8}};
-    int matriz3[2][3] = {{1, 2, 3},
-    {4, 5, 6}};
-    transponerMatriz((int*)matriz, ORDEN, ORDEN);
-    mostrarMatriz((int*)matriz, ORDEN, ORDEN);
-    transponerMatriz((int*)matriz2, 3, 2);
-    mostrarMatriz((int*)matriz2, 3, 2);
+//    int matriz[ORDEN][ORDEN] = {{1, 2, 3},
+//                                {4, 5, 6},
+//                                {7, 8, 9}};
+//    int matriz2[3][2] = {{1, 2},
+//                        {4, 5},
+//                        {7, 8}};
+//    int matriz3[2][3] = {{1, 2, 3},
+//    {4, 5, 6}};
+//    transponerMatriz((int*)matriz, ORDEN, ORDEN);
+//    mostrarMatriz((int*)matriz, ORDEN, ORDEN);
+//    transponerMatriz((int*)matriz2, 3, 2);
+//    mostrarMatriz((int*)matriz2, 3, 2);
     /// ---------------- EJERCICIO 19 ----------------
 //    int matriz[3][2] = {{1, 2},
 //                        {4, 5},
@@ -121,5 +121,22 @@ int main()
 //    printf("Matriz correcta: %d\n",verificarMatriz((int*)matriz));
 //    puntosPorEquipo((int*)matriz);
     /// ---------------- EJERCICIO 21 ----------------
+    int vec[TAM] = {1, 5, 9, 17, 25};
+    int element = 3;
+    int quantityOfElements = 5;
+    int position = 4;
+    imprimirVector(vec, quantityOfElements);
+    insertElementGeneric(vec, &element, position, sizeof(position), TAM, &quantityOfElements, swapIntegers);
+    imprimirVector(vec, quantityOfElements);
+//    element = 4;    insertElementGeneric(vec, &element, position, sizeof(position), TAM, &quantityOfElements, swapIntegers);
+    imprimirVector(vec, quantityOfElements);
+//    element = 5;
+    insertElementGeneric(vec, &element, position, sizeof(position), TAM, &quantityOfElements, swapIntegers);
+    imprimirVector(vec, quantityOfElements);
+//    element = 6;    insertElementGeneric(vec, &element, position, sizeof(position), TAM, &quantityOfElements, swapIntegers);
+    imprimirVector(vec, quantityOfElements);
+//    element = 7;
+    insertElementGeneric(vec, &element, position, sizeof(position), TAM, &quantityOfElements, swapIntegers);
+    imprimirVector(vec, quantityOfElements);
     return 0;
 }

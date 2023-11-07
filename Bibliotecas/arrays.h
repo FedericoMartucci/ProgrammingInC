@@ -3,6 +3,7 @@
 
 #include <stdio.h>
 #include <stdlib.h>
+#include <string.h>
 
 #define TAM 7
 #define ORDEN 3
@@ -10,6 +11,9 @@
 #define esBlanco(X) (X == ' ' || X == '\t')
 #define aMayus(X) ((X >= 'A' && X <= 'Z')? (X):(X - ('a' - 'A')))
 #define aMinus(X) ((X >= 'a' && X <= 'z')? (X):(X + ('a' - 'A')))
+
+#define FULL_ARRAY_ERR -1
+#define OK 0
 
 void insertarElemento(int, int*, int, int, int*);
 void insertarElementoOrdenado(int*, int, int, int*);
@@ -39,4 +43,12 @@ void productoMatrices(const int*, const int*, int, int, int, int);
 void mostrarMatriz(int*, int, int);
 int verificarMatriz(int*);
 void puntosPorEquipo(int*);
+void insertElementGeneric(void* arr, void* element, int position, size_t elementSize, size_t arraySize, int* quantityOfElements, void(*swapElement)());
+void insertSortedElementGeneric(void* arr, void* element, size_t arraySize, int* quantityOfElements);
+void eraseElementGen(void* arr, void* element, size_t arraySize, int* quantityOfElements);
+void eraseFirstOccurrenceElementGen(void* arr, void* element, size_t arraySize, int* quantityOfElements);
+void eraseAllOcurrencesElementGen(void* arr, void* element, size_t arraySize, int* quantityOfElements);
+void swapIntegers(void* arr, void* element);
+void swapFloats(void* arr, void* element);
+void swapChars(void* arr, void* element);
 #endif // ARRAYS_H_INCLUDED

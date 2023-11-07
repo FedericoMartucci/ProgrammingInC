@@ -1,12 +1,12 @@
 # depslib dependency file v1.0
-1698672289 source:c:\devs\ejerciciosforo\filetomatrix\main\main.c
+1699324099 source:c:\devs\ejerciciosforo\filetomatrix\main\main.c
 	"matrix.h"
 
-1698672325 c:\devs\ejerciciosforo\filetomatrix\main\matrix.h
+1699324099 c:\devs\ejerciciosforo\filetomatrix\main\matrix.h
 	<stdio.h>
 	<stdlib.h>
 	<string.h>
 
-1698672354 source:c:\devs\ejerciciosforo\filetomatrix\main\matrix.c
+1699324148 source:c:\devs\ejerciciosforo\filetomatrix\main\matrix.c
 	"matrix.h"
 
